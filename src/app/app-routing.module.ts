@@ -4,8 +4,10 @@ import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { ProductComponent } from './product/product.component';
 
 const routes: Routes = [
+  {path: 'product/:id', component: ProductComponent},
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent}, 
   {path: 'products', component: ProductsComponent}, 
